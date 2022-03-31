@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Bật Tắt Bóng Đèn Điện</h2>
+   
+    <img id="myImage" src="HinhAnh/pic_bulboff.gif" style="width:100px">
+   
+    <button onclick="BatTatDen()">Bật/Tắt </button>
+</body>
+<script>
+    function BatTatDen() 
+    {
+        if (document.getElementById('myImage').src.includes('HinhAnh/pic_bulboff.gif'))
+            document.getElementById('myImage').src = 'HinhAnh/pic_bulbon.gif';
+        else
+            document.getElementById('myImage').src = 'HinhAnh/pic_bulboff.gif';
+    }
+</script>
+</html>

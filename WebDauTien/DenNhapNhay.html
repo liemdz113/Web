@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đèn Nhấp Nháy</title>
+    <style>
+        body {background-color:rgb(0, 0, 0);}
+
+        h2 {color: rgba(5, 165, 40, 0.719);}
+        h2{font-size: 25px;}
+       button 
+       {
+        color:rgb(2, 2, 2);
+        border-color: rgb(27, 201, 65);
+           width: 200px;
+           height: 40px;
+           font-size: 20px;
+           font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h2> Bật Tắt Bóng Đèn Điện</h2>
+    <img id="myImage" src="HinhAnh/0.png" />
+    <button onclick="BatTatDen()">Bật/Chuyển Chế Độ</button>
+</body>
+<script>
+    function BatTatDen() 
+    {
+        var i = 0;
+        var hinhAnh = "HinhAnh/" + i + ".png";
+        setInterval(function () {
+            document.getElementById('myImage').src = hinhAnh;
+            i++;
+            if (i > 4)
+                i = 0;
+            hinhAnh = "HinhAnh/" + i + ".png";
+        }, 500);
+    }
+</script>
+</html>
